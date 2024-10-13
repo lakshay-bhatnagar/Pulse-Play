@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Pulse Play</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">User 123</string>
+    <string name="nav_header_subtitle">user.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu_home">Home</string>
+    <string name="menu_play">Play</string>
+    <string name="menu_profile">Profile</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_page_line">Choose your favorite sport</string>
+    <string name="sport1">Football</string>
+    <string name="sport2">Cricket</string>
+    <string name="sport3">Volleyball</string>
+    <string name="sport4">Marathon</string>
+    <string name="sport6">Badminton</string>
+    <string name="famous_places">Famous places near your area</string>
+    <string name="football_pitch_noida">Football Arena, Noida</string>
+    <string name="football_pitch_noida_desc">Sample description</string>
+    <string name="table_tennis_faridabad">Unified Table Tennis, Faridabad</string>
+    <string name="tennis_delhi">DDA Tennis Court, Delhi</string>
+    <string name="looking_for_company">Looking for companion?</string>
+    <string name="host_sport">Host for companion</string>
+    <string name="book">Book</string>
+    <string name="join_sport">Join as companion</string>
+    <string name="join">Join</string>
+    <string name="user_name_profile_page">Firstname Lastname</string>
+</resources>

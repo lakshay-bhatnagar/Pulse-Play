@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.pulseplay.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_nav_home_to_caloriesTrackFragment"
+            app:destination="@id/caloriesTrackFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_play"
+        android:name="com.example.pulseplay.ui.play.PlayFragment"
+        android:label="@string/menu_play"
+        tools:layout="@layout/fragment_play" >
+        <action
+            android:id="@+id/action_nav_play_to_bookFragment"
+            app:destination="@id/bookFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.pulseplay.ui.profile.ProfileFragment"
+        android:label="@string/menu_profile"
+        tools:layout="@layout/fragment_profile" />
+
+    <fragment
+        android:id="@+id/nav_settings"
+        android:name="com.example.pulseplay.ui.settings.SettingsFragment"
+        android:label="Settings"
+        tools:layout="@layout/fragment_settings" />
+    <fragment
+        android:id="@+id/caloriesTrackFragment"
+        android:name="com.example.pulseplay.ui.trackcalories.CaloriesTrackFragment"
+        android:label="Track your calories" >
+        <action
+            android:id="@+id/action_caloriesTrackFragment_to_nav_home"
+            app:destination="@id/nav_home"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/bookFragment"
+        android:name="com.example.pulseplay.ui.companion.BookFragment"
+        android:label="Book your sport"
+        tools:layout="@layout/fragment_book" >
+        <action
+            android:id="@+id/play_btn_action_bookFragment_to_successfulBookingFragment"
+            app:destination="@id/successfulBookingFragment"
+            app:enterAnim="@android:anim/fade_in"
+            app:exitAnim="@android:anim/fade_out" />
+        <action
+            android:id="@+id/cancel_btn_action_bookFragment_to_nav_play"
+            app:destination="@id/nav_play"
+            app:enterAnim="@android:anim/slide_out_right" />
+    </fragment>
+    <fragment
+        android:id="@+id/successfulBookingFragment"
+        android:name="com.example.pulseplay.ui.companion.SuccessfulBookingFragment"
+        android:label="Payment Successful"
+        tools:layout="@layout/fragment_successful_booking" />
+</navigation>

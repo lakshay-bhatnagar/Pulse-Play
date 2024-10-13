@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dark_mode"
+    tools:context="ui.play.PlayFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="none"
+        android:background="@color/dark_mode">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/homePageLine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_page_line"
+                android:textSize="32sp"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"/>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:scrollbars="none">
+
+                <LinearLayout
+                    android:background="@color/dark_mode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/sport1CardView"
+                        android:layout_width="150dp"
+                        android:layout_height="120dp"
+                        android:layout_marginStart="20dp"
+                        app:cardBackgroundColor="@color/card_color"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:orientation="vertical">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/baseline_sports_soccer_24"
+                                android:scaleType="centerInside"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="@string/sport1"
+                                android:fontFamily="@font/sf_pro_display_regular"
+                                android:textColor="@color/white"
+                                android:textSize="19sp"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginTop="9dp"/>
+                        </LinearLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/sport2CardView"
+                        android:layout_width="150dp"
+                        android:layout_marginStart="20dp"
+                        app:cardBackgroundColor="@color/card_color"
+                        android:layout_height="120dp"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="70dp"
+                                android:layout_gravity="center_horizontal"
+                                android:src="@drawable/baseline_sports_cricket_24"
+                                android:scaleType="centerInside"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="9dp"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/sport2"
+                                android:textColor="@color/white"
+                                android:textSize="19sp"
+                                android:fontFamily="@font/sf_pro_display_regular" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/sport3CardView"
+                        android:layout_width="150dp"
+                        android:layout_marginStart="20dp"
+                        app:cardBackgroundColor="@color/card_color"
+                        android:layout_height="120dp"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/baseline_sports_volleyball_24"
+                                android:scaleType="centerInside"
+                                android:layout_gravity="center_horizontal"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="9dp"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/sport3"
+                                android:textColor="@color/white"
+                                android:textSize="19sp"
+                                android:fontFamily="@font/sf_pro_display_regular" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/sport4CardView"
+                        android:layout_width="150dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginEnd="20dp"
+                        app:cardBackgroundColor="@color/card_color"
+                        android:layout_height="120dp"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/baseline_directions_run_24"
+                                android:scaleType="centerInside"
+                                android:layout_gravity="center_horizontal"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="9dp"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/sport4"
+                                android:textColor="@color/white"
+                                android:textSize="19sp"
+                                android:fontFamily="@font/sf_pro_display_regular" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/sport6CardView"
+                        android:layout_width="150dp"
+                        android:layout_marginEnd="20dp"
+                        app:cardBackgroundColor="@color/card_color"
+                        android:layout_height="120dp"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginBottom="5dp">
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_gravity="center">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/baseline_sports_tennis_24"
+                                android:scaleType="centerInside"
+                                android:layout_gravity="center_horizontal"/>
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="9dp"
+                                android:layout_gravity="center_horizontal"
+                                android:text="@string/sport6"
+                                android:textColor="@color/white"
+                                android:textSize="19sp"
+                                android:fontFamily="@font/sf_pro_display_regular" />
+                        </LinearLayout>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="26sp"
+                android:text="@string/famous_places"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/white"/>
+
+
+            <!--Famous places card 1-->
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="15dp"
+                app:cardBackgroundColor="@color/card_color"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <!-- Card Outer Image and Outer layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/football_pitch"/>
+                    <!--Card inner text layout-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/football_pitch_noida"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:layout_marginStart="12dp"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/football_pitch_noida_desc"
+                            android:textSize="11sp"
+                            android:paddingBottom="10dp"
+                            android:textColor="@color/small_text"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="12dp"
+                            android:fontFamily="@font/sf_pro_display_lightitalic"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="15dp"
+                app:cardBackgroundColor="@color/card_color"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <!-- Card Outer Image and Outer layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/table_tennis_clubs"/>
+                    <!--Card inner text layout-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/table_tennis_faridabad"
+                            android:textSize="18sp"
+                            android:layout_marginStart="12dp"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/football_pitch_noida_desc"
+                            android:textSize="11sp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="12dp"
+                            android:paddingBottom="10dp"
+                            android:fontFamily="@font/sf_pro_display_lightitalic"
+                            android:textColor="@color/small_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginStart="15dp"
+                app:cardBackgroundColor="@color/card_color"
+                app:cardElevation="8dp"
+                app:cardCornerRadius="8dp">
+
+                <!-- Card Outer Image and Outer layout -->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/tennis_court"/>
+                    <!--Card inner text layout-->
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/tennis_delhi"
+                            android:textSize="18sp"
+                            android:layout_marginStart="12dp"
+                            android:fontFamily="@font/sf_pro_display_regular"
+                            android:textColor="@color/white"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="@string/football_pitch_noida_desc"
+                            android:textSize="11sp"
+                            android:paddingBottom="10dp"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginStart="12dp"
+                            android:fontFamily="@font/sf_pro_display_lightitalic"
+                            android:textColor="@color/small_text"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <!-- 'Looking for companion' text view with a card view for hosting and one card view for joining -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:textSize="26sp"
+                android:text="@string/looking_for_company"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:layout_marginStart="15dp"
+                android:textColor="@color/white"/>
+
+            <!-- Horizontal layout for joining and hosting event-->
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scrollbars="none"
+                android:layout_marginTop="25dp">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:background="@color/dark_mode"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="250dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="20dp"
+                        app:cardElevation="8dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardBackgroundColor="@color/purple">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:textSize="26sp"
+                            android:text="@string/host_sport"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/sf_pro_display_regular"/>
+
+                        <Button
+                            android:id="@+id/bookBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/white"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="100dp"
+                            android:textColor="@color/purple"
+                            android:text="@string/book"
+                            android:textSize="20sp"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="250dp"
+                        android:layout_height="150dp"
+                        android:layout_marginStart="20dp"
+                        app:cardElevation="8dp"
+                        android:layout_marginEnd="20dp"
+                        app:cardCornerRadius="8dp"
+                        app:cardBackgroundColor="@color/green">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="20dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:textSize="26sp"
+                            android:text="@string/join_sport"
+                            android:textColor="@color/white"
+                            android:fontFamily="@font/sf_pro_display_regular"/>
+
+                        <Button
+                            android:id="@+id/joinBtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/white"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="100dp"
+                            android:textColor="@color/green"
+                            android:text="@string/join"
+                            android:textSize="20sp"/>
+                    </androidx.cardview.widget.CardView>
+                </LinearLayout>
+
+            </HorizontalScrollView>
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

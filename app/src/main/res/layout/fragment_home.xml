@@ -1,0 +1,535 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_mode"
+    tools:context=".ui.home.HomeFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_mode"
+        android:scrollbars="none"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="@color/dark_mode">
+            <SearchView
+                android:id="@+id/searchView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/search_view_bg"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="30dp"
+                android:queryHint="Search your sport here..."
+                android:iconifiedByDefault="false"/>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/dark_mode">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/today_weekly_tab"
+                    android:layout_width="wrap_content"
+                    app:cardBackgroundColor="@color/dark_card_background"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="30dp"
+                    app:cardCornerRadius="25dp"
+                    app:cardElevation="0dp"
+                    android:layout_height="wrap_content">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="4dp">
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/tab_today_card"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="2dp"
+                            android:padding="10dp"
+                            app:cardCornerRadius="20dp"
+                            app:cardBackgroundColor="@android:color/white"
+                            app:cardElevation="4dp">
+
+                            <TextView
+                                android:id="@+id/tab_today_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Today"
+                                android:fontFamily="@font/sf_pro_display_regular"
+                                android:layout_gravity="center"
+                                android:padding="10dp"
+                                android:textColor="@color/black"/>
+
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:id="@+id/tab_weekly_card"
+                            android:layout_width="120dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="2dp"
+                            app:cardCornerRadius="20dp"
+                            android:padding="10dp"
+                            app:cardBackgroundColor="@color/dark_card_background"
+                            app:cardElevation="0dp">
+
+                            <TextView
+                                android:id="@+id/tab_weekly_text"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Weekly"
+                                android:layout_gravity="center"
+                                android:fontFamily="@font/sf_pro_display_regular"
+                                android:padding="10dp"
+                                android:textColor="@color/light_text_color"/>
+
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+            </RelativeLayout>
+
+
+            <GridLayout
+                android:id="@+id/gridLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:rowCount="2"
+                android:layout_gravity="center"
+                android:columnCount="2"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:layout_gravity="center"
+                    app:cardBackgroundColor="@color/gray"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="20dp">
+
+                    <!-- Content like calories -->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/gray">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Calories"
+                            android:textSize="22sp"
+                            android:id="@+id/card_calorie_text"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="20dp"
+                            android:textColor="@color/black"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/baseline_local_fire_department_24"
+                            android:background="@drawable/home_page_calorie_carbs_circle"
+                            android:padding="5dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="13dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2.600"
+                            android:textColor="@color/black"
+                            android:id="@+id/caloriesNumber"
+                            android:textSize="22sp"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignTop="@id/card_calorie_text"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="100dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="cal"
+                            android:textSize="11sp"
+                            android:fontFamily="@font/sf_pro_display_light"
+                            android:layout_toEndOf="@id/caloriesNumber"
+                            android:layout_alignBottom="@id/caloriesNumber"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginStart="5dp"/>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:layout_gravity="center"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginStart="20dp"
+                    app:cardBackgroundColor="@color/black"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="20dp">
+
+                    <!-- Content like carbs -->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/black">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Protein"
+                            android:textSize="22sp"
+                            android:id="@+id/card_protein_text"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="20dp"
+                            android:textColor="@color/white"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/chicken_svgrepo_com"
+                            android:background="@drawable/home_page_calorie_carbs_circle"
+                            android:padding="5dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="13dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:id="@+id/proteinNumber"
+                            android:textSize="22sp"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignTop="@id/card_protein_text"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="100dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="g"
+                            android:textColor="@color/small_text"
+                            android:textSize="11sp"
+                            android:fontFamily="@font/sf_pro_display_light"
+                            android:layout_toEndOf="@id/proteinNumber"
+                            android:layout_alignBottom="@id/proteinNumber"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginStart="5dp"/>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:layout_gravity="center"
+                    android:layout_columnWeight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_rowWeight="1"
+                    app:cardElevation="8dp"
+                    app:cardBackgroundColor="@color/blue_card_dark"
+                    app:cardCornerRadius="20dp">
+
+                    <!-- Content like protein -->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/blue_card_dark">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Carbs"
+                            android:id="@+id/card_carb_text"
+                            android:textSize="22sp"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="20dp"
+                            android:textColor="@color/white"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/wheat_svgrepo_com"
+                            android:background="@drawable/home_page_calorie_carbs_circle"
+                            android:padding="5dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="13dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/white"
+                            android:id="@+id/carbsNumber"
+                            android:textSize="22sp"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignTop="@id/card_carb_text"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="100dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="g"
+                            android:textColor="@color/small_text"
+                            android:textSize="11sp"
+                            android:fontFamily="@font/sf_pro_display_light"
+                            android:layout_toEndOf="@id/carbsNumber"
+                            android:layout_alignBottom="@id/carbsNumber"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginStart="5dp"/>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="175dp"
+                    android:layout_height="175dp"
+                    android:layout_gravity="center"
+                    android:layout_columnWeight="1"
+                    android:layout_rowWeight="1"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp"
+                    app:cardBackgroundColor="@color/blue_card_light"
+                    app:cardElevation="8dp"
+                    app:cardCornerRadius="20dp">
+
+                    <!-- Content like fat -->
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/blue_card_light">
+                        <TextView
+                            android:id="@+id/card_fat_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Fat"
+                            android:textSize="22sp"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignParentTop="true"
+                            android:layout_marginStart="13dp"
+                            android:layout_marginTop="20dp"
+                            android:textColor="@color/black"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/pizza_svgrepo_com"
+                            android:background="@drawable/home_page_calorie_carbs_circle"
+                            android:padding="5dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentEnd="true"
+                            android:layout_marginTop="15dp"
+                            android:layout_marginEnd="13dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="0"
+                            android:textColor="@color/black"
+                            android:id="@+id/fatNumber"
+                            android:textSize="22sp"
+                            android:fontFamily="@font/sf_pro_display_semibold"
+                            android:layout_alignParentStart="true"
+                            android:layout_alignTop="@id/card_fat_text"
+                            android:layout_marginTop="100dp"
+                            android:layout_marginStart="13dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="g"
+                            android:textColor="@color/small_text"
+                            android:textSize="11sp"
+                            android:fontFamily="@font/sf_pro_display_light"
+                            android:layout_toEndOf="@id/fatNumber"
+                            android:layout_alignBottom="@id/fatNumber"
+                            android:layout_marginBottom="10dp"
+                            android:layout_marginStart="5dp"/>
+
+                    </RelativeLayout>
+                </androidx.cardview.widget.CardView>
+            </GridLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Track Calories"
+                android:layout_marginStart="25dp"
+                android:textSize="28sp"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="25dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="190dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="11dp"
+                app:cardBackgroundColor="@color/card_color"
+                android:id="@+id/addCalories">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/card_color">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calories Eaten"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/sf_pro_display_semibold"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/addCalorieText"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="19dp"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addCaloriesBtn"
+                        android:background="@drawable/home_page_calorie_carbs_circle"
+                        android:src="@drawable/arrow_right_line"
+                        android:padding="2dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginTop="18dp"/>
+                </RelativeLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="190dp"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp"
+                app:cardCornerRadius="15dp"
+                app:cardElevation="11dp"
+                app:cardBackgroundColor="@color/card_color"
+                android:id="@+id/addExercise">
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@color/card_color">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calories Burned"
+                        android:textColor="@color/white"
+                        android:textSize="17sp"
+                        android:fontFamily="@font/sf_pro_display_semibold"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:id="@+id/addExerciseText"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="19dp"/>
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/addExerciseBtn"
+                        android:background="@drawable/home_page_calorie_carbs_circle"
+                        android:src="@drawable/arrow_right_line"
+                        android:padding="2dp"
+                        android:layout_alignParentEnd="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginTop="18dp"/>
+                </RelativeLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:text="Streaks"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:layout_marginStart="25dp"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="200dp"
+                android:layout_height="150dp"
+                android:layout_gravity="center"
+                app:cardBackgroundColor="@color/card_color"
+                app:cardElevation="11dp"
+                android:layout_marginBottom="20dp"
+                app:cardCornerRadius="20dp"
+                android:layout_marginTop="20dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@color/card_color">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/fire_svgrepo_com"
+                        android:id="@+id/streaksIcon"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_marginStart="50dp"
+                        android:layout_marginTop="18dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="22sp"
+                        android:text="21"
+                        android:textColor="@color/white"
+                        android:fontFamily="@font/sf_pro_display_semibold"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentBottom="true"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginStart="85dp"/>
+                </RelativeLayout>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

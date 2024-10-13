@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:background="@color/dark_mode"
+    tools:context="ui.trackcalories.CaloriesTrackFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <TextView
+        android:id="@+id/track_calorie_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="60dp"
+        android:fontFamily="@font/sf_pro_display_bold"
+        android:text="Track your calories"
+        android:textColor="@color/white"
+        android:textSize="28sp"
+        app:layout_constraintLeft_toLeftOf="@id/main"
+        app:layout_constraintTop_toTopOf="@id/main" />
+
+    <EditText
+        android:id="@+id/track_calorie_edttxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="108dp"
+        android:layout_marginTop="96dp"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:gravity="center"
+        android:hint="Add calories eaten"
+        android:inputType="number"
+        android:minHeight="48dp"
+        android:paddingStart="25dp"
+        android:paddingEnd="25dp"
+        android:textColor="#ffffff"
+        android:textColorHint="#808080"
+        app:layout_constraintLeft_toLeftOf="@id/main"
+        app:layout_constraintTop_toTopOf="@id/track_calorie_text" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/track_calorie_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="88dp"
+        android:background="@drawable/ios_default_btn"
+        android:fontFamily="@font/sf_pro_display_regular"
+        android:padding="11dp"
+        android:text="Track Calories"
+        app:backgroundTint="#0874F2"
+        app:elevation="5dp"
+        app:layout_constraintLeft_toLeftOf="@id/track_calorie_edttxt"
+        app:layout_constraintTop_toTopOf="@id/track_calorie_edttxt" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dark_mode"
+    tools:context=".ui.companion.BookFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/bookPlaceText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Book your place and start playing"
+            android:textSize="28sp"
+            android:fontFamily="@font/sf_pro_display_bold"
+            android:textColor="@color/white"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="30dp"/>
+
+        <TextView
+            android:id="@+id/nameTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="What is your name ?"
+            android:textColor="@color/white"
+            android:layout_alignTop="@id/bookPlaceText"
+            android:layout_alignStart="@id/bookPlaceText"
+            android:layout_marginTop="100dp"
+            android:fontFamily="@font/sf_pro_display_medium"/>
+
+        <EditText
+            android:id="@+id/nameEditText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="15"
+            android:minHeight="40dp"
+            android:textColorHint="@color/small_text"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:inputType="text"
+            android:layout_alignTop="@id/nameTxt"
+            android:layout_alignStart="@id/nameTxt"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/input_box_bg"/>
+
+        <TextView
+            android:id="@+id/dateTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="When do you want to play ?"
+            android:textColor="@color/white"
+            android:layout_alignTop="@id/bookPlaceText"
+            android:layout_alignStart="@id/bookPlaceText"
+            android:layout_marginTop="200dp"
+            android:fontFamily="@font/sf_pro_display_medium"/>
+
+        <EditText
+            android:id="@+id/dateEditTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:hint="dd/mm/yyyy"
+            android:textColorHint="@color/small_text"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:inputType="date"
+            android:layout_alignTop="@id/dateTxt"
+            android:layout_alignStart="@id/dateTxt"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/input_box_bg"/>
+
+        <TextView
+            android:id="@+id/numberOfPeople"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="How many people are with you ?"
+            android:textColor="@color/white"
+            android:layout_alignTop="@id/bookPlaceText"
+            android:layout_alignStart="@id/bookPlaceText"
+            android:layout_marginTop="300dp"
+            android:fontFamily="@font/sf_pro_display_medium"/>
+
+        <EditText
+            android:id="@+id/numberOfPeopleEdtTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:ems="4"
+            android:textColorHint="@color/small_text"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:inputType="numberSigned"
+            android:layout_alignTop="@id/numberOfPeople"
+            android:layout_alignStart="@id/numberOfPeople"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/input_box_bg"/>
+
+        <TextView
+            android:id="@+id/reqPeopleTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="How many more people do you need ?"
+            android:textColor="@color/white"
+            android:layout_alignTop="@id/bookPlaceText"
+            android:layout_alignStart="@id/bookPlaceText"
+            android:layout_marginTop="400dp"
+            android:fontFamily="@font/sf_pro_display_medium"/>
+
+        <EditText
+            android:id="@+id/reqPeopleEdtTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:ems="4"
+            android:textColorHint="@color/small_text"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:inputType="numberSigned"
+            android:layout_alignTop="@id/reqPeopleTxt"
+            android:layout_alignStart="@id/reqPeopleTxt"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/input_box_bg"/>
+
+        <TextView
+            android:id="@+id/placeTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="Where are you going to play ?"
+            android:textColor="@color/white"
+            android:layout_alignTop="@id/bookPlaceText"
+            android:layout_alignStart="@id/bookPlaceText"
+            android:layout_marginTop="500dp"
+            android:fontFamily="@font/sf_pro_display_medium"/>
+
+        <EditText
+            android:id="@+id/placeEditTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minHeight="40dp"
+            android:ems="15"
+            android:textColorHint="@color/small_text"
+            android:paddingStart="10dp"
+            android:paddingEnd="10dp"
+            android:inputType="textMultiLine"
+            android:layout_alignTop="@id/placeTxt"
+            android:layout_alignStart="@id/placeTxt"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/input_box_bg"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/cancelBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#EE222B"
+            android:background="@drawable/ios_default_btn"
+            android:text="Cancel"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:layout_alignStart="@id/bookPlaceText"
+            android:layout_alignTop="@id/placeEditTxt"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="10dp"
+            android:gravity="center"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/playSubmitBtn"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            app:backgroundTint="#60DB53"
+            android:background="@drawable/ios_default_btn"
+            android:text="Play"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:layout_alignStart="@id/bookPlaceText"
+            android:layout_alignTop="@id/placeEditTxt"
+            android:layout_marginTop="70dp"
+            android:layout_marginStart="175dp"
+            android:gravity="center"/>
+
+    </RelativeLayout>
+</FrameLayout>
