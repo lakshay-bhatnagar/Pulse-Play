@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.places.Famous2Fragment">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/table_tennis_clubs"
+        android:scaleType="center"/>
+
+    <CheckBox
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        android:button="@null"
+        android:drawableTop="@drawable/bookmark_outline"
+        android:gravity="center"
+        android:padding="8dp"
+        android:id="@+id/bookmarked" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/famous_places_bg"
+        android:layout_marginTop="250dp">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/place_name_text_view"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="28sp"
+                    android:fontFamily="@font/sf_pro_display_bold"
+                    android:text="@string/table_tennis_faridabad"
+                    android:textColor="@color/white"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:textColor="@color/white"
+                    android:text="@string/about_this_place"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="20dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:fontFamily="@font/sf_pro_display_light"
+                    android:textColor="@color/light_text_color"
+                    android:text="@string/football_pitch_noida_desc"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"
+                    android:text="@string/rating_and_reviews"
+                    android:layout_marginStart="20dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="25sp"
+                    android:textColor="@color/white"
+                    android:fontFamily="@font/sf_pro_display_bolditalic"
+                    android:text="4.2"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="10dp"/>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginStart="20dp">
+
+                    <ImageView
+                        android:id="@+id/temp_user1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/profile_with_circle_svgrepo_com"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:scaleX="0.4"
+                        android:scaleY="0.4"/>
+
+                    <TextView
+                        android:id="@+id/user1_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_text_color"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@id/temp_user1"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15sp"
+                        android:text="Ravi Sharma" />
+
+                    <TextView
+                        android:id="@+id/user1_review"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#9E9E9E"
+                        android:layout_alignStart="@id/user1_username"
+                        android:layout_alignTop="@id/user1_username"
+                        android:layout_marginTop="20dp"
+                        android:text="~ perfect place to play table tennis"
+                        android:gravity="center"
+                        android:layout_gravity="center" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp">
+
+                    <ImageView
+                        android:id="@+id/temp_user2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/profile_with_circle_svgrepo_com"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignParentStart="true"
+                        android:scaleX="0.4"
+                        android:scaleY="0.4"/>
+
+                    <TextView
+                        android:id="@+id/user2_username"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/light_text_color"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:layout_alignParentTop="true"
+                        android:layout_alignStart="@id/temp_user2"
+                        android:layout_marginStart="70dp"
+                        android:layout_marginTop="10dp"
+                        android:textSize="15sp"
+                        android:text="Pradeep" />
+
+                    <TextView
+                        android:id="@+id/user2_review"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="12sp"
+                        android:textColor="#9E9E9E"
+                        android:layout_alignStart="@id/user2_username"
+                        android:layout_alignTop="@id/user2_username"
+                        android:layout_marginTop="20dp"
+                        android:text="~ good place with very well maintained play area"
+                        android:gravity="center"
+                        android:layout_gravity="center" />
+                </RelativeLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:layout_width="200dp"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/ios_default_btn"
+                    app:backgroundTint="@color/green"
+                    android:text="Book Now"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    app:elevation="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:id="@+id/bookBtn" />
+            </LinearLayout>
+        </ScrollView>
+
+    </FrameLayout>
+
+</FrameLayout>

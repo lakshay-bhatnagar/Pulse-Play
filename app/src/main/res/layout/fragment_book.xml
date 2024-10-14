@@ -64,16 +64,17 @@
             android:layout_marginTop="200dp"
             android:fontFamily="@font/sf_pro_display_medium"/>
 
-        <EditText
-            android:id="@+id/dateEditTxt"
+        <TextView
+            android:id="@+id/dateTxtView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:minHeight="40dp"
             android:hint="dd/mm/yyyy"
+            android:text=""
+            android:gravity="center"
             android:textColorHint="@color/small_text"
             android:paddingStart="10dp"
             android:paddingEnd="10dp"
-            android:inputType="date"
             android:layout_alignTop="@id/dateTxt"
             android:layout_alignStart="@id/dateTxt"
             android:layout_marginTop="30dp"

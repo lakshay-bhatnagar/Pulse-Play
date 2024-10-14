@@ -25,6 +25,18 @@
             android:id="@+id/action_nav_play_to_bookFragment"
             app:destination="@id/bookFragment"
             app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_nav_play_to_famous1Fragment"
+            app:destination="@id/famous1Fragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_nav_play_to_famous2Fragment"
+            app:destination="@id/famous2Fragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_nav_play_to_famous3Fragment"
+            app:destination="@id/famous3Fragment"
+            app:enterAnim="@android:anim/slide_in_left" />
     </fragment>
 
     <fragment
@@ -67,4 +79,34 @@
         android:name="com.example.pulseplay.ui.companion.SuccessfulBookingFragment"
         android:label="Payment Successful"
         tools:layout="@layout/fragment_successful_booking" />
+    <fragment
+        android:id="@+id/famous1Fragment"
+        android:name="com.example.pulseplay.ui.places.Famous1Fragment"
+        android:label=""
+        tools:layout="@layout/fragment_famous1" >
+        <action
+            android:id="@+id/action_famous1Fragment_to_bookFragment"
+            app:destination="@id/bookFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/famous2Fragment"
+        android:name="com.example.pulseplay.ui.places.Famous2Fragment"
+        android:label=""
+        tools:layout="@layout/fragment_famous2" >
+        <action
+            android:id="@+id/action_famous2Fragment_to_bookFragment"
+            app:destination="@id/bookFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/famous3Fragment"
+        android:name="com.example.pulseplay.ui.places.Famous3Fragment"
+        android:label=""
+        tools:layout="@layout/fragment_famous3" >
+        <action
+            android:id="@+id/action_famous3Fragment_to_bookFragment"
+            app:destination="@id/bookFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
 </navigation>

@@ -20,7 +20,8 @@
     <string name="sport6">Badminton</string>
     <string name="famous_places">Famous places near your area</string>
     <string name="football_pitch_noida">Football Arena, Noida</string>
-    <string name="football_pitch_noida_desc">Sample description</string>
+    <string name="desc_play_fragment">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rut</string>
+    <string name="football_pitch_noida_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam rutrum odio dui, auctor sagittis justo posuere vitae. Curabitur odio dui, faucibus et congue a, maximus ut ipsum. Sed eget dapibus nunc. Morbi sit amet cursus risus. Sed blandit tempus nulla, ut interdum neque blandit facilisis. Donec in odio tempor, sollicitudin risus nec, sollicitudin lectus. Donec tincidunt nibh ut consequat egestas. Donec commodo iaculis nulla. Pellentesque mollis, leo sed porta varius, lorem tellus pretium lectus, at porta leo felis nec velit. Suspendisse aliquet, urna vel pellentesque auctor, odio risus suscipit risus, at viverra nunc sapien id metus. Duis dui tortor, egestas quis feugiat vel, dictum quis mauris. Donec scelerisque varius nisi ac cursus. Phasellus ac accumsan turpis. Fusce ac tempor arcu. Praesent pulvinar eget ligula a ornare.</string>
     <string name="table_tennis_faridabad">Unified Table Tennis, Faridabad</string>
     <string name="tennis_delhi">DDA Tennis Court, Delhi</string>
     <string name="looking_for_company">Looking for companion?</string>
@@ -29,4 +30,6 @@
     <string name="join_sport">Join as companion</string>
     <string name="join">Join</string>
     <string name="user_name_profile_page">Firstname Lastname</string>
+    <string name="about_this_place">About this place</string>
+    <string name="rating_and_reviews">Rating and Reviews</string>
 </resources>
