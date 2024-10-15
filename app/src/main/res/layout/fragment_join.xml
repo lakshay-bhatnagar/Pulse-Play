@@ -3,8 +3,650 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@color/dark_mode"
     tools:context=".ui.companion.JoinFragment">
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_mode"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_mode"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:textSize="28sp"
+                android:text="@string/join_sport"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="1dp"
+                    android:layout_weight="1"
+                    android:background="@color/light_text_color"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="30dp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sf_pro_display_regular"
+                android:text="@string/pulse_players_near_you"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="30dp" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="50dp"
+                    android:src="@drawable/football_pitch"
+                    android:scaleType="center" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/famous_places_bg"
+                    android:layout_marginTop="100dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:text="@string/football_pitch_noida"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="50dp"
+                            android:background="@color/light_text_color"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="30dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginStart="20dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Posted by"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/sf_pro_display_light"
+                            android:textColor="@color/small_text" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ravi Sharma"
+                            android:textSize="24sp"
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            android:textColor="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:src="@drawable/group_svgrepo_com"
+                                app:tint="@color/small_text" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="no. of people with them - 5"
+                                android:textSize="14sp"
+                                android:textColor="@color/small_text"
+                                android:fontFamily="@font/sf_pro_display_light" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:src="@drawable/group_svgrepo_com"
+                                app:tint="@color/small_text" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="no. of people required - 2"
+                                android:textSize="14sp"
+                                android:textColor="@color/small_text"
+                                android:fontFamily="@font/sf_pro_display_light" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:icon="@drawable/run_person_fast_rush_svgrepo_com"
+                                app:iconGravity="start"
+                                app:iconTint="@color/white"
+                                android:text="Play Along"
+                                android:layout_marginEnd="10dp"
+                                app:backgroundTint="@color/green"
+                                android:textColor="@color/white" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:icon="@drawable/bookmark_outline"
+                                app:iconGravity="start"
+                                app:iconTint="@color/white"
+                                android:text="Bookmark"
+                                app:backgroundTint="#ff8da1"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/table_tennis_clubs"
+                    android:paddingBottom="300dp"
+                    android:scaleType="center" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/famous_places_bg"
+                    android:layout_marginTop="100dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:text="@string/table_tennis_faridabad"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="50dp"
+                            android:background="@color/light_text_color"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="30dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginStart="20dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Posted by"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/sf_pro_display_light"
+                            android:textColor="@color/small_text" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Sunil Kumar"
+                            android:textSize="24sp"
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            android:textColor="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:src="@drawable/group_svgrepo_com"
+                                app:tint="@color/small_text" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="no. of people with them - 0"
+                                android:textSize="14sp"
+                                android:textColor="@color/small_text"
+                                android:fontFamily="@font/sf_pro_display_light" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:src="@drawable/group_svgrepo_com"
+                                app:tint="@color/small_text" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="no. of people required - 1"
+                                android:textSize="14sp"
+                                android:textColor="@color/small_text"
+                                android:fontFamily="@font/sf_pro_display_light" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:icon="@drawable/run_person_fast_rush_svgrepo_com"
+                                app:iconGravity="start"
+                                app:iconTint="@color/white"
+                                android:text="Play Along"
+                                android:layout_marginEnd="10dp"
+                                app:backgroundTint="@color/green"
+                                android:textColor="@color/white" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:icon="@drawable/bookmark_outline"
+                                app:iconGravity="start"
+                                app:iconTint="@color/white"
+                                android:text="Bookmark"
+                                app:backgroundTint="#ff8da1"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/volleyball_court"
+                    android:paddingBottom="100dp"
+                    android:scaleType="center" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/famous_places_bg"
+                    android:layout_marginTop="100dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:text="@string/volleyball_court_rajnagar"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="50dp"
+                            android:background="@color/light_text_color"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="30dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginStart="20dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Posted by"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/sf_pro_display_light"
+                            android:textColor="@color/small_text" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hitesh Singh"
+                            android:textSize="24sp"
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            android:textColor="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:src="@drawable/group_svgrepo_com"
+                                app:tint="@color/small_text" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="no. of people with them - 7"
+                                android:textSize="14sp"
+                                android:textColor="@color/small_text"
+                                android:fontFamily="@font/sf_pro_display_light" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:src="@drawable/group_svgrepo_com"
+                                app:tint="@color/small_text" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="no. of people required - 4"
+                                android:textSize="14sp"
+                                android:textColor="@color/small_text"
+                                android:fontFamily="@font/sf_pro_display_light" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:icon="@drawable/run_person_fast_rush_svgrepo_com"
+                                app:iconGravity="start"
+                                app:iconTint="@color/white"
+                                android:text="Play Along"
+                                android:layout_marginEnd="10dp"
+                                app:backgroundTint="@color/green"
+                                android:textColor="@color/white" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:icon="@drawable/bookmark_outline"
+                                app:iconGravity="start"
+                                app:iconTint="@color/white"
+                                android:text="Bookmark"
+                                app:backgroundTint="#ff8da1"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="310dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"
+                android:layout_gravity="center">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical">
+
+                </LinearLayout>
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/tennis_court"
+                    android:paddingBottom="230dp"
+                    android:scaleType="center" />
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/famous_places_bg"
+                    android:layout_marginTop="100dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/white"
+                        android:textSize="18sp"
+                        android:text="@string/tennis_delhi"
+                        android:fontFamily="@font/sf_pro_display_regular"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="20dp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal">
+                        <View
+                            android:layout_width="0dp"
+                            android:layout_height="1dp"
+                            android:layout_weight="1"
+                            android:layout_marginTop="50dp"
+                            android:background="@color/light_text_color"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginEnd="30dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginTop="60dp"
+                        android:layout_marginStart="20dp"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Posted by"
+                            android:textSize="18sp"
+                            android:fontFamily="@font/sf_pro_display_light"
+                            android:textColor="@color/small_text" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Nakul Dhul"
+                            android:textSize="24sp"
+                            android:fontFamily="@font/sf_pro_display_medium"
+                            android:textColor="@color/white" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:src="@drawable/group_svgrepo_com"
+                                app:tint="@color/small_text" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="no. of people with them - 2"
+                                android:textSize="14sp"
+                                android:textColor="@color/small_text"
+                                android:fontFamily="@font/sf_pro_display_light" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginEnd="5dp"
+                                android:src="@drawable/group_svgrepo_com"
+                                app:tint="@color/small_text" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="no. of people required - 2"
+                                android:textSize="14sp"
+                                android:textColor="@color/small_text"
+                                android:fontFamily="@font/sf_pro_display_light" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center"
+                            android:layout_marginTop="5dp"
+                            android:orientation="horizontal">
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:icon="@drawable/run_person_fast_rush_svgrepo_com"
+                                app:iconGravity="start"
+                                app:iconTint="@color/white"
+                                android:text="Play Along"
+                                android:layout_marginEnd="10dp"
+                                app:backgroundTint="@color/green"
+                                android:textColor="@color/white" />
+
+                            <com.google.android.material.button.MaterialButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                app:icon="@drawable/bookmark_outline"
+                                app:iconGravity="start"
+                                app:iconTint="@color/white"
+                                android:text="Bookmark"
+                                app:backgroundTint="#ff8da1"
+                                android:textColor="@color/white" />
+                        </LinearLayout>
+                    </LinearLayout>
+                </FrameLayout>
+            </FrameLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
 
 </FrameLayout>

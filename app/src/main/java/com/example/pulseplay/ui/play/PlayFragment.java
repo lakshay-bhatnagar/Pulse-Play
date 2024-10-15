@@ -40,6 +40,15 @@ public class PlayFragment extends Fragment {
             }
         });
 
+        Button joinButton = binding.joinBtn; // JAI SHREE RAM
+
+        joinButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(v).navigate(R.id.action_nav_play_to_joinFragment);
+            }
+        });
+
         // navigating from famous places to their description
 
         famous1.setOnClickListener(new View.OnClickListener() {

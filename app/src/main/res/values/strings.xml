@@ -29,7 +29,9 @@
     <string name="book">Book</string>
     <string name="join_sport">Join as companion</string>
     <string name="join">Join</string>
-    <string name="user_name_profile_page">Firstname Lastname</string>
+    <string name="user_name_profile_page">Admin PulsePlay</string>
     <string name="about_this_place">About this place</string>
     <string name="rating_and_reviews">Rating and Reviews</string>
+    <string name="pulse_players_near_you">Pulse Players near you</string>
+    <string name="volleyball_court_rajnagar">Volleyball Court, Raj Nagar</string>
 </resources>

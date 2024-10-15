@@ -1,7 +1,11 @@
 package com.example.pulseplay.ui.home;
 
 import android.graphics.Color;
+import android.graphics.LinearGradient;
+import android.graphics.Shader;
 import android.os.Bundle;
+import android.text.TextPaint;
+import android.text.TextUtils;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -29,6 +33,7 @@ public class HomeFragment extends Fragment {
     private CardView tabWeekly;
     private TextView tabTodayText;
     private TextView tabWeeklyText;
+    private TextView userNameHome;
     private ImageButton addCalories;
     private SearchView searchView;
 
@@ -43,10 +48,29 @@ public class HomeFragment extends Fragment {
         tabWeeklyText = root.findViewById(R.id.tab_weekly_text);
         addCalories = root.findViewById(R.id.addCaloriesBtn);
         searchView = root.findViewById(R.id.searchView);
+        userNameHome = binding.userName;
+
+        TextPaint paint = userNameHome.getPaint();
+        float width = paint.measureText(userNameHome.getResources().getString(R.string.user_name_profile_page));
+        Shader textShader = new LinearGradient(0,0,width,userNameHome.getTextSize(),
+                new int[]{
+                        Color.parseColor("#FF5CCC"),
+                        Color.parseColor("#DC52BF"),
+                        Color.parseColor("#B947B1"),
+                        Color.parseColor("#973DA4"),
+                        Color.parseColor("#743296"),
+                        Color.parseColor("#512889")
+                }, null, Shader.TileMode.CLAMP);
+
+        userNameHome.getPaint().setShader(textShader);
 
         if (getArguments() != null) {
             int calories = getArguments().getInt("calories");
             updateMacros(calories);
+            String username = getArguments().getString("userFullname");
+            if (!TextUtils.isEmpty(username)){
+                userNameHome.setText(username);
+            }
         }
         // Set default states
         setSelectedTab(tabToday, tabTodayText, tabWeekly, tabWeeklyText);

@@ -3,7 +3,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_home">
+    app:startDestination="@id/loginFragment">
 
     <fragment
         android:id="@+id/nav_home"
@@ -37,13 +37,22 @@
             android:id="@+id/action_nav_play_to_famous3Fragment"
             app:destination="@id/famous3Fragment"
             app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_nav_play_to_joinFragment"
+            app:destination="@id/joinFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
     </fragment>
 
     <fragment
         android:id="@+id/nav_profile"
         android:name="com.example.pulseplay.ui.profile.ProfileFragment"
         android:label="@string/menu_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_profile" >
+        <action
+            android:id="@+id/action_nav_profile_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
 
     <fragment
         android:id="@+id/nav_settings"
@@ -109,4 +118,33 @@
             app:destination="@id/bookFragment"
             app:enterAnim="@android:anim/slide_in_left" />
     </fragment>
+    <fragment
+        android:id="@+id/loginFragment"
+        android:name="com.example.pulseplay.ui.loginsignup.LoginFragment"
+        android:label="Log in"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_loginFragment_to_nav_home"
+            app:destination="@id/nav_home"
+            app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_loginFragment_to_signinFragment"
+            app:destination="@id/signinFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/signinFragment"
+        android:name="com.example.pulseplay.ui.loginsignup.SigninFragment"
+        android:label="Sign Up"
+        tools:layout="@layout/fragment_signin" >
+        <action
+            android:id="@+id/action_signinFragment_to_loginFragment"
+            app:destination="@id/loginFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/joinFragment"
+        android:name="com.example.pulseplay.ui.companion.JoinFragment"
+        android:label="Join"
+        tools:layout="@layout/fragment_join" />
 </navigation>
