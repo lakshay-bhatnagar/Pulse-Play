@@ -20,6 +20,11 @@ public class PlayFragment extends Fragment {
     private CardView famous1;
     private CardView famous2;
     private CardView famous3;
+    private CardView footballCard;
+    private CardView cricketCard;
+    private CardView volleyballCard;
+    private CardView tennisCard;
+    private CardView badmintonCard;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
@@ -41,6 +46,8 @@ public class PlayFragment extends Fragment {
         });
 
         Button joinButton = binding.joinBtn; // JAI SHREE RAM
+
+        // navigating to join page
 
         joinButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -69,6 +76,19 @@ public class PlayFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Navigation.findNavController(v).navigate(R.id.action_nav_play_to_famous3Fragment);
+            }
+        });
+
+        footballCard = binding.sport1CardView;
+        cricketCard = binding.sport2CardView;
+        volleyballCard = binding.sport3CardView;
+        tennisCard = binding.sport4CardView;
+        badmintonCard = binding.sport5CardView;
+
+        footballCard.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(v).navigate(R.id.action_nav_play_to_playFootballFragment);
             }
         });
 

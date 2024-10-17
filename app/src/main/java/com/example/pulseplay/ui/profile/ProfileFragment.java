@@ -18,24 +18,33 @@ import androidx.navigation.Navigation;
 
 import com.example.pulseplay.R;
 import com.example.pulseplay.databinding.FragmentProfileBinding;
+import com.google.android.material.card.MaterialCardView;
 
 public class ProfileFragment extends Fragment {
 
     private FragmentProfileBinding binding;
     private CardView logoutButton;
+    private MaterialCardView myActivitesButton;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
 
         binding = FragmentProfileBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
-
+        myActivitesButton = binding.myactivitiesProfileBtn;
         logoutButton = binding.logoutProfileBtn;
         // navigating to login page after user taps on logout
         logoutButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Navigation.findNavController(v).navigate(R.id.action_nav_profile_to_loginFragment);
+            }
+        });
+
+        myActivitesButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(v).navigate(R.id.action_nav_profile_to_myActivitesFragment);
             }
         });
 

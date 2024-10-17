@@ -19,7 +19,7 @@ import com.example.pulseplay.R;
 public class Famous2Fragment extends Fragment {
 
     private FragmentFamous2Binding fragmentFamous2Binding;
-    private Button bookButton;
+    private Button bookButton, buyButton, rentButton;
     private TextView place;
 
     @Override
@@ -30,6 +30,8 @@ public class Famous2Fragment extends Fragment {
 
         place = fragmentFamous2Binding.placeNameTextView;
         bookButton = fragmentFamous2Binding.bookBtn;
+        buyButton = fragmentFamous2Binding.buyBtn;
+        rentButton = fragmentFamous2Binding.rentBtn;
 
         bookButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -40,6 +42,20 @@ public class Famous2Fragment extends Fragment {
                 bundle.putString("place", placeName);
 
                 Navigation.findNavController(v).navigate(R.id.action_famous2Fragment_to_bookFragment, bundle);
+            }
+        });
+
+        buyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(v).navigate(R.id.action_famous2Fragment_to_buyFragmentTableTennis);
+            }
+        });
+
+        rentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(v).navigate(R.id.action_famous2Fragment_to_rentFragmentTableTennis);
             }
         });
 

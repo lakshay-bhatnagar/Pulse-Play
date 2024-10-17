@@ -19,7 +19,7 @@ public class Famous3Fragment extends Fragment {
 
     private FragmentFamous3Binding fragmentFamous3Binding;
     private TextView place;
-    private Button bookButton;
+    private Button bookButton, buyButton, rentButton;
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, ViewGroup container,
@@ -29,6 +29,8 @@ public class Famous3Fragment extends Fragment {
 
         place = fragmentFamous3Binding.placeNameTextView;
         bookButton = fragmentFamous3Binding.bookBtn;
+        buyButton = fragmentFamous3Binding.buyBtn;
+        rentButton = fragmentFamous3Binding.rentBtn;
 
         bookButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -39,6 +41,20 @@ public class Famous3Fragment extends Fragment {
                 bundle.putString("place", placeName);
 
                 Navigation.findNavController(v).navigate(R.id.action_famous3Fragment_to_bookFragment, bundle);
+            }
+        });
+
+        buyButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(v).navigate(R.id.action_famous3Fragment_to_buyFragmentCricket);
+            }
+        });
+
+        rentButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Navigation.findNavController(v).navigate(R.id.action_famous3Fragment_to_rentFragmentCricket);
             }
         });
 

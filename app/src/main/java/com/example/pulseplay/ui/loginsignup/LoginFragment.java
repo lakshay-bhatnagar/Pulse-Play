@@ -61,7 +61,7 @@ public class LoginFragment extends Fragment {
                 if ((emailId.equals("admin@pulseplay.com") && password.equals("password")) || emailId.equals(newEmailId) && password.equals(newPassword)){
                     Bundle bundle = new Bundle();
                     bundle.putString("userFullname", newFullname);
-                    Navigation.findNavController(v).navigate(R.id.action_loginFragment_to_nav_home, bundle);
+                    Navigation.findNavController(v).navigate(R.id.action_loginFragment_to_preferencesFragment2, bundle);
                 } else {
                     Toast.makeText(getActivity(),"Please enter valid username or password", Toast.LENGTH_SHORT).show();
                 }

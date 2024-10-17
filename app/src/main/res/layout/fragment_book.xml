@@ -177,37 +177,63 @@
             android:layout_marginTop="30dp"
             android:background="@drawable/input_box_bg"/>
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/cancelBtn"
-            android:layout_width="150dp"
+        <TextView
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:backgroundTint="#EE222B"
-            android:background="@drawable/ios_default_btn"
-            android:text="Cancel"
-            android:textSize="18sp"
-            android:textColor="@color/white"
-            android:fontFamily="@font/sf_pro_display_medium"
-            android:layout_alignStart="@id/bookPlaceText"
+            android:layout_alignStart="@id/placeEditTxt"
             android:layout_alignTop="@id/placeEditTxt"
+            android:textColor="@color/small_text"
+            android:textSize="18sp"
             android:layout_marginTop="70dp"
-            android:layout_marginStart="10dp"
-            android:gravity="center"/>
+            android:fontFamily="@font/sf_pro_display_medium"
+            android:text="Your skill level" />
 
-        <com.google.android.material.button.MaterialButton
-            android:id="@+id/playSubmitBtn"
-            android:layout_width="150dp"
+        <Spinner
+            android:id="@+id/skillLevelSpinner"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            app:backgroundTint="#60DB53"
-            android:background="@drawable/ios_default_btn"
-            android:text="Play"
-            android:textColor="@color/white"
-            android:textSize="18sp"
-            android:fontFamily="@font/sf_pro_display_medium"
-            android:layout_alignStart="@id/bookPlaceText"
             android:layout_alignTop="@id/placeEditTxt"
+            android:layout_alignStart="@id/placeEditTxt"
             android:layout_marginTop="70dp"
-            android:layout_marginStart="175dp"
-            android:gravity="center"/>
+            android:layout_marginStart="120dp"
+            android:entries="@array/skill_levels" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/skillLevelSpinner"
+            android:layout_marginTop="50dp"
+            android:gravity="center"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/cancelBtn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="20dp"
+                app:backgroundTint="#EE222B"
+                android:background="@drawable/ios_default_btn"
+                android:text="Cancel"
+                android:textSize="18sp"
+                android:textColor="@color/white"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:gravity="center"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/playSubmitBtn"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                app:backgroundTint="#60DB53"
+                android:background="@drawable/ios_default_btn"
+                android:text="Play"
+                android:textColor="@color/white"
+                android:textSize="18sp"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:gravity="center"/>
+        </LinearLayout>
+
+
 
     </RelativeLayout>
 </FrameLayout>

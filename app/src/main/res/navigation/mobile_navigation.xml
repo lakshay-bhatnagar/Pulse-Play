@@ -41,6 +41,10 @@
             android:id="@+id/action_nav_play_to_joinFragment"
             app:destination="@id/joinFragment"
             app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_nav_play_to_playFootballFragment"
+            app:destination="@id/playFootballFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
     </fragment>
 
     <fragment
@@ -51,6 +55,10 @@
         <action
             android:id="@+id/action_nav_profile_to_loginFragment"
             app:destination="@id/loginFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_nav_profile_to_myActivitesFragment"
+            app:destination="@id/myActivitesFragment"
             app:enterAnim="@android:anim/slide_in_left" />
     </fragment>
 
@@ -97,6 +105,14 @@
             android:id="@+id/action_famous1Fragment_to_bookFragment"
             app:destination="@id/bookFragment"
             app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_famous1Fragment_to_buyFragment"
+            app:destination="@id/buyFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_famous1Fragment_to_rentFragment"
+            app:destination="@id/rentFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
     </fragment>
     <fragment
         android:id="@+id/famous2Fragment"
@@ -106,6 +122,14 @@
         <action
             android:id="@+id/action_famous2Fragment_to_bookFragment"
             app:destination="@id/bookFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_famous2Fragment_to_rentFragmentTableTennis"
+            app:destination="@id/rentFragmentTableTennis"
+            app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_famous2Fragment_to_buyFragmentTableTennis"
+            app:destination="@id/buyFragmentTableTennis"
             app:enterAnim="@android:anim/slide_in_left" />
     </fragment>
     <fragment
@@ -117,6 +141,14 @@
             android:id="@+id/action_famous3Fragment_to_bookFragment"
             app:destination="@id/bookFragment"
             app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_famous3Fragment_to_rentFragmentCricket"
+            app:destination="@id/rentFragmentCricket"
+            app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_famous3Fragment_to_buyFragmentCricket"
+            app:destination="@id/buyFragmentCricket"
+            app:enterAnim="@android:anim/slide_in_left" />
     </fragment>
     <fragment
         android:id="@+id/loginFragment"
@@ -124,12 +156,12 @@
         android:label="Log in"
         tools:layout="@layout/fragment_login" >
         <action
-            android:id="@+id/action_loginFragment_to_nav_home"
-            app:destination="@id/nav_home"
-            app:enterAnim="@android:anim/slide_in_left" />
-        <action
             android:id="@+id/action_loginFragment_to_signinFragment"
             app:destination="@id/signinFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+        <action
+            android:id="@+id/action_loginFragment_to_preferencesFragment2"
+            app:destination="@id/preferencesFragment"
             app:enterAnim="@android:anim/slide_in_left" />
     </fragment>
     <fragment
@@ -147,4 +179,64 @@
         android:name="com.example.pulseplay.ui.companion.JoinFragment"
         android:label="Join"
         tools:layout="@layout/fragment_join" />
+    <fragment
+        android:id="@+id/preferencesFragment"
+        android:name="com.example.pulseplay.ui.loginsignup.PreferencesFragment"
+        android:label="Preferences"
+        tools:layout="@layout/fragment_preferences" >
+        <action
+            android:id="@+id/action_preferencesFragment_to_nav_home"
+            app:destination="@id/nav_home"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/playFootballFragment"
+        android:name="com.example.pulseplay.ui.play.PlayFootballFragment"
+        android:label="Learn Football"
+        tools:layout="@layout/fragment_play_football" />
+    <fragment
+        android:id="@+id/myActivitesFragment"
+        android:name="com.example.pulseplay.ui.profile.MyActivitesFragment"
+        android:label="Recent Activities"
+        tools:layout="@layout/fragment_my_activites" >
+        <action
+            android:id="@+id/action_myActivitesFragment_to_chatCompanionFragment"
+            app:destination="@id/chatCompanionFragment"
+            app:enterAnim="@android:anim/slide_in_left" />
+    </fragment>
+    <fragment
+        android:id="@+id/chatCompanionFragment"
+        android:name="com.example.pulseplay.ui.profile.ChatCompanionFragment"
+        android:label="Chat"
+        tools:layout="@layout/fragment_chat_companion" />
+    <fragment
+        android:id="@+id/buyFragment"
+        android:name="com.example.pulseplay.ui.buyrent.BuyFragment"
+        android:label="Buy"
+        tools:layout="@layout/fragment_buy" />
+    <fragment
+        android:id="@+id/rentFragment"
+        android:name="com.example.pulseplay.ui.buyrent.RentFragment"
+        android:label="Rent"
+        tools:layout="@layout/fragment_rent" />
+    <fragment
+        android:id="@+id/rentFragmentTableTennis"
+        android:name="com.example.pulseplay.ui.buyrent.RentFragmentTableTennis"
+        android:label="Rent"
+        tools:layout="@layout/fragment_rent_table_tennis" />
+    <fragment
+        android:id="@+id/buyFragmentTableTennis"
+        android:name="com.example.pulseplay.ui.buyrent.BuyFragmentTableTennis"
+        android:label="Buy"
+        tools:layout="@layout/fragment_buy_table_tennis" />
+    <fragment
+        android:id="@+id/buyFragmentCricket"
+        android:name="com.example.pulseplay.ui.buyrent.BuyFragmentCricket"
+        android:label="Buy"
+        tools:layout="@layout/fragment_buy_cricket" />
+    <fragment
+        android:id="@+id/rentFragmentCricket"
+        android:name="com.example.pulseplay.ui.buyrent.RentFragmentCricket"
+        android:label="Rent"
+        tools:layout="@layout/fragment_rent_cricket" />
 </navigation>

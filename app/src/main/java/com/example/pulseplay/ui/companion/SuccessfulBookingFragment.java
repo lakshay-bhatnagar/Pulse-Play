@@ -32,20 +32,16 @@ public class SuccessfulBookingFragment extends Fragment {
             String date = getArguments().getString("date");
             String curr = getArguments().getString("curr");
             String req = getArguments().getString("req");
-
-            TextView bookIdTxtView = view.findViewById(R.id.generatedBookingId);
-            TextView bookDateTxtView = view.findViewById(R.id.bookingDate);
-            TextView numberPeopleTxtView = view.findViewById(R.id.reqPeople);
+            // Set TextView data using binding
             StringBuilder sb = new StringBuilder();
             sb.append(name);
             sb.append(date);
             sb.append(curr);
             sb.append(req);
-            // setting booking id as name_date_currpeople_reqpeople
-            bookIdTxtView.setText(sb.toString());
+            fragmentSuccessfulBookingBinding.generatedBookingId.setText(sb.toString());
 
-            bookDateTxtView.setText(date);
-            numberPeopleTxtView.setText(curr);
+            fragmentSuccessfulBookingBinding.bookingDate.setText(date);
+            fragmentSuccessfulBookingBinding.reqPeople.setText(curr);
         }
 
         return view;

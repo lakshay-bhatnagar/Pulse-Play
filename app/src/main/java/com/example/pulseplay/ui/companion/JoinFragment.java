@@ -22,6 +22,7 @@ public class JoinFragment extends Fragment {
         joinFragmentBinding = FragmentJoinBinding.inflate(inflater, container, false);
         View view = joinFragmentBinding.getRoot();
 
+        // todo : add functionality for join fragment so that user can play along and book mark the post.
         return view;
     }
 }

@@ -186,6 +186,96 @@
                     app:elevation="10dp"
                     android:layout_marginBottom="20dp"
                     android:id="@+id/bookBtn" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/sf_pro_display_medium"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="20dp"
+                    android:text="Gear up for this sport"
+                    android:layout_marginStart="20dp" />
+
+                <HorizontalScrollView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:layout_marginTop="25dp">
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:background="@color/card_color"
+                        android:layout_marginBottom="10dp"
+                        android:orientation="horizontal">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="250dp"
+                            android:layout_height="150dp"
+                            android:layout_marginStart="20dp"
+                            app:cardElevation="8dp"
+                            app:cardCornerRadius="8dp"
+                            app:cardBackgroundColor="@color/purple">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:textSize="26sp"
+                                android:text="Buy an equipment"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/sf_pro_display_regular"/>
+
+                            <Button
+                                android:id="@+id/buyBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="100dp"
+                                android:textColor="@color/purple"
+                                android:text="buy"
+                                android:textSize="20sp"/>
+                        </androidx.cardview.widget.CardView>
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="250dp"
+                            android:layout_height="150dp"
+                            android:layout_marginStart="20dp"
+                            app:cardElevation="8dp"
+                            android:layout_marginEnd="20dp"
+                            app:cardCornerRadius="8dp"
+                            app:cardBackgroundColor="@color/green">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginTop="20dp"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginEnd="10dp"
+                                android:textSize="26sp"
+                                android:text="Rent an equipment"
+                                android:textColor="@color/white"
+                                android:fontFamily="@font/sf_pro_display_regular"/>
+
+                            <Button
+                                android:id="@+id/rentBtn"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:backgroundTint="@color/white"
+                                android:layout_marginStart="10dp"
+                                android:layout_marginTop="100dp"
+                                android:textColor="@color/green"
+                                android:text="rent"
+                                android:textSize="20sp"/>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </HorizontalScrollView>
+
             </LinearLayout>
         </ScrollView>
 

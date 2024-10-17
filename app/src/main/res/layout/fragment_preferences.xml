@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/dark_mode"
+    tools:context=".ui.loginsignup.PreferencesFragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/dark_mode"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/dark_mode"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textSize="28sp"
+                android:text="@string/tell_us_about_yourself"
+                android:fontFamily="@font/sf_pro_display_bold"
+                android:layout_marginStart="30dp"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/small_text"
+                android:fontFamily="@font/sf_pro_display_light"
+                android:text="Choose your username"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="20sp"
+                    android:textColor="@color/small_text"
+                    android:layout_gravity="center"
+                    android:fontFamily="@font/sf_pro_display_light"
+                    android:layout_marginStart="30dp"
+                    android:text="@string/at_sign" />
+
+                <EditText
+                    android:id="@+id/uniqueUsername"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/input_box_bg"
+                    android:minHeight="40dp"
+                    android:hint="username"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginEnd="100dp"
+                    android:paddingStart="20dp"
+                    android:paddingEnd="5dp"
+                    android:inputType="text"
+                    android:gravity="center|start"
+                    android:textColorHint="#9e9e9e"
+                    android:textSize="16sp"
+                    android:textColor="@color/white"
+                    android:layout_marginTop="5dp" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/small_text"
+                android:fontFamily="@font/sf_pro_display_light"
+                android:text="What is your age?"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp" />
+
+            <EditText
+                android:id="@+id/agePreferences"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_box_bg"
+                android:minHeight="40dp"
+                android:hint="age"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="100dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="5dp"
+                android:inputType="number"
+                android:gravity="center|start"
+                android:textColorHint="#9e9e9e"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/small_text"
+                android:fontFamily="@font/sf_pro_display_light"
+                android:text="Your locality"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp" />
+
+            <EditText
+                android:id="@+id/localityPreferences"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/input_box_bg"
+                android:minHeight="40dp"
+                android:hint="eg., Ghaziabad, Uttar Pradesh"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="100dp"
+                android:paddingStart="20dp"
+                android:paddingEnd="5dp"
+                android:inputType="textMultiLine"
+                android:gravity="center|start"
+                android:textColorHint="#9e9e9e"
+                android:textSize="16sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/small_text"
+                android:fontFamily="@font/sf_pro_display_light"
+                android:text="What is your gender?"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp">
+
+                <RadioButton
+                    android:id="@+id/maleRadioPreferences"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Male"
+                    android:textColor="@color/small_text"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+
+                <RadioButton
+                    android:id="@+id/femaleRadioPreferences"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Female"
+                    android:textColor="@color/small_text"
+                    android:fontFamily="@font/sf_pro_display_regular" />
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:textColor="@color/small_text"
+                android:fontFamily="@font/sf_pro_display_light"
+                android:text="Choose atleast 3 sports"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="30dp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/cricketCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Cricket"
+                android:textSize="16sp"
+                android:textColor="@color/small_text"
+                android:drawableStart="@drawable/baseline_sports_cricket_24_small"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:layout_marginStart="30dp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/footballCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Football"
+                android:textSize="16sp"
+                android:textColor="@color/small_text"
+                android:drawablePadding="5dp"
+                android:drawableStart="@drawable/baseline_sports_soccer_24_small"
+                android:gravity="center"
+                android:layout_marginStart="30dp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/volleyballCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Volleyball"
+                android:textSize="16sp"
+                android:textColor="@color/small_text"
+                android:drawableStart="@drawable/baseline_sports_volleyball_24_small"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:layout_marginStart="30dp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/tennisCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Lawn Tennis"
+                android:textSize="16sp"
+                android:textColor="@color/small_text"
+                android:drawableStart="@drawable/baseline_sports_tennis_24_small"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:layout_marginStart="30dp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/badmintonCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Badminton"
+                android:textSize="16sp"
+                android:textColor="@color/small_text"
+                android:drawableStart="@drawable/badminton_svgrepo_com"
+                android:drawableTint="@color/white"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:layout_marginStart="30dp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/hockeyCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Hockey"
+                android:textSize="16sp"
+                android:textColor="@color/small_text"
+                android:drawableStart="@drawable/hockey_stick_with_ball_svgrepo_com"
+                android:drawableTint="@color/white"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:layout_marginStart="30dp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/tabletennisCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Table Tennis"
+                android:textSize="16sp"
+                android:textColor="@color/small_text"
+                android:drawableLeft="@drawable/table_tennis_1_svgrepo_com"
+                android:drawableTint="@color/white"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:layout_marginStart="30dp" />
+
+            <com.google.android.material.checkbox.MaterialCheckBox
+                android:id="@+id/basketballCheckbox"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Basketball"
+                android:textSize="16sp"
+                android:textColor="@color/small_text"
+                android:drawableLeft="@drawable/sports_basketball_svgrepo_com"
+                android:drawableTint="@color/white"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:layout_marginStart="30dp" />
+
+<!--            <com.google.android.material.checkbox.MaterialCheckBox-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Cricket"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="@color/small_text"-->
+<!--                android:drawableLeft="@drawable/baseline_sports_cricket_24_small"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginStart="30dp" />-->
+
+<!--            <com.google.android.material.checkbox.MaterialCheckBox-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Cricket"-->
+<!--                android:textSize="16sp"-->
+<!--                android:textColor="@color/small_text"-->
+<!--                android:drawableLeft="@drawable/baseline_sports_cricket_24_small"-->
+<!--                android:gravity="center"-->
+<!--                android:layout_marginStart="30dp" />-->
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/doneBtnPref"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:layout_marginEnd="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:text="Done!"
+                android:fontFamily="@font/sf_pro_display_medium"
+                android:textColor="@color/dark_mode"
+                android:background="@drawable/ios_default_btn"
+                app:backgroundTint="@color/small_text" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</FrameLayout>
